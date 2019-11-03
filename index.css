@@ -1,0 +1,421 @@
+body {
+    margin:0;
+}
+.header-image{
+    width:100%;
+}
+.first-page {
+    width:100%;
+    top:0;
+    right:0;
+    left:0;
+    height: 100vh;
+}
+.header {
+    width:100%;
+    height:50px;
+    display:flex;
+    margin-top: 32px;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.header-flag {
+    background-image:url('./assets/header-flag.svg');
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 100%;
+    display:flex;
+    /* justify-content: space-between; */
+    padding-right:30px;
+    align-items: center;
+
+}
+.header-flag img {
+    padding-left:35px;
+
+}
+.header-pages {
+    display:flex;
+    width:75%;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+.header-pages a {
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0;
+    color: #707070;
+    padding-left:40px;
+    cursor: pointer;
+    font-size:16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-pages .selected {
+    color:#248451;
+    font-family:'Roboto';
+    font-weight: bold;
+}
+.header-pages a:hover{
+    color:#248451;
+    font-weight: 500;
+    font-weight: bold;
+}
+.first-page--content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin-top: 20px;
+}
+.first-page--content-left{
+    width:50%;
+    margin-left:62px;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+}
+.first-page-title{
+    color:#248451;
+    font-family: 'Abril Fatface';
+    font-size:70px;
+    margin-bottom:0;
+}
+.first-page-subtitle {
+    color:#248451;
+    font-family: 'Abril Fatface';
+    font-size:70px;
+    opacity: 73%;
+    margin:0;
+}
+.first-page-description {
+    margin-top:32px;
+    font-family: 'Roboto';
+    letter-spacing: 0;
+    font-size:16px;
+    color: #707070;
+}
+.first-page--content-right {
+    width:50%;
+    position: relative;
+
+    /* background-image:url('./assets/Ilsutratie.svg'); */
+    /* background-repeat: no-repeat; */
+    /* height:100%; */
+}
+.first-page-image {
+    height: 100%;
+    width:100%;
+    max-width: 700px;
+}
+.first-page-counter{
+    position: absolute;
+    width:400px;
+    height:150px;
+    background-color:rgba(255, 199, 199, 0.3);
+    top:70%;
+    left:35%;
+    /* bottom:0; */
+    padding:8px;
+}
+.first-page-counter-top {
+    display:flex;
+    align-items:center;
+    font-family:'Roboto';
+    font-weight: bold;
+}
+.first-page-counter-line {
+    width:30%;
+    height:3px;
+    background-color: #DA3636;
+}
+.first-page-counter-text {
+    padding:0 3px;
+    display:flex;
+    justify-content: space-between;
+    width:45%;
+    color: #DA3636;
+    text-transform: uppercase;
+    align-items: center;
+}
+.first-page-counter-middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.first-page-counter-group {
+    width:30%;
+    display:flex;
+}
+.first-page-counter-group-box {
+    margin-left:5px;
+    width:50%;
+    border-radius: 5px;
+    height:100px;
+    background-color: #FF000038;
+    color:#CB0000B5;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.first-page-counter-bottom {
+    text-transform: uppercase;
+    font-size:20px;
+    font-family:'Roboto';
+    text-align: center;
+    color:#DA3636;
+    font-weight: bold;
+}
+.about-event{
+    width:100%;
+    height: 100vh;
+}
+.about-top{
+    background-color: #2F8D5B;
+    height:60px;
+
+    display: flex;
+    justify-content: center;
+}
+.about-top-title {
+    color:white;
+    font-family: 'Roboto';
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: center;
+}
+.about-content {
+    margin-top:70px;
+    margin-left:62px;
+    display: flex;
+}
+.about-description{
+    width:55%;
+    height:370px;
+    background-color:#E7F1E6;
+    display: flex;
+    padding:0 64px;
+}
+.about-description-left{
+    width:60%;
+    padding-top:64px;
+}
+.about-description-title{
+    font-family: 'Roboto';
+    font-size: 24px;
+    color:#498465;
+    font-weight: bold;
+    margin-bottom:32px;
+}
+.about-description-text{
+    font-family: 'Roboto';
+    font-size: 16px;
+    color:#707070;
+}
+.about-description-right{
+    width:40%;
+}
+.about-details{
+    background-color: #2F8D5B;
+    padding: 0 64px;
+    width: 30%;
+    margin-top: 10%;
+    height: 280px;
+    margin-left: -5%;
+    display:flex;
+    position: relative;
+}
+.about-details-left{
+    margin-top:54px;
+    width:70%;
+}
+.about-details-text{
+    margin-top:10px;
+    font-size:16px;
+    color:white;
+    font-family: "Roboto";
+}
+.about-details-right{
+    position: absolute;
+    margin-top:-25%;
+    top:15%;
+    right:0;
+}
+.beneficiaries-page{
+    width:100%;
+    height:fit-content;
+}
+.beneficiaries-top{
+    background:url('./assets/beneficiaries-header.svg');
+    width:100%;
+    background-repeat: no-repeat;
+    height:75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beneficiaries-top-title{
+    color:white;
+    font-family: 'Roboto';
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.beneficiaries-content{
+    width:100%;
+    display:flex;
+}
+.beneficiaries-content-left{
+    width:50%;
+    margin-top: 20px;
+}
+.beneficiaries-content-paragraph{
+    margin-bottom:32px;
+    margin-left:62px;
+}
+.beneficiaries-content-paragraph-title{
+    color:#DA3636;
+    font-size:24px;
+    font-family: "Roboto";
+    font-weight: bold;
+    z-index:100;
+}
+.beneficiaries-content-paragraph-content {
+    font-size:14px;
+    font-family: 'Roboto';
+    color:#707070;
+    z-index:100;
+}
+.beneficiaries-content-right{
+    width:50%;
+    margin-left:-5%;
+}
+.ibanZone{
+    margin-top:4%;
+    width: 100%;
+    background: url('./assets/iban-zone.svg');
+    background-repeat: no-repeat;
+    height:150px;
+    padding-left: 64px;
+    padding-top:25px;
+}
+.ibanZone-title{
+    font-size:24px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color:white;
+}
+.ibanZone-iban{
+    font-size:14px;
+    font-family: "Roboto";
+    color:white;
+}
+.ibanZone-name{
+    font-size:14px;
+    font-family: "Roboto";
+    color:white;
+}
+.beneficiaries-bottom{
+    width:100%;
+}
+.last-page {
+    width: 100%;
+    height: 100vh;
+}
+.coordinator{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.coordinator-details{
+    background:url('./assets/coordinator-details.svg');
+    background-repeat: no-repeat;
+    height:150px;
+    width:46%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.coordinator-name{
+    font-size:24px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color:white;
+    margin-bottom:10px;
+}
+.coordinator-infos{
+    font-size:14px;
+    font-family: "Roboto";
+    color:white;
+}
+.parteners{
+    margin-top:15px;
+}
+.parteners-top{
+    width:100%;
+    height:60px;
+    background-color: #DA3636;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.footer{
+    width: 100%;
+    height:200px;
+}
+.footer-trees{
+    width:100%;
+}
+.footer-content{
+    margin-top:-50px;
+    background-color: #248451;
+    height: 180px;
+    display:flex;
+    justify-content: flex-start;
+    padding:62px;
+}
+.footer-content{
+    display: flex;
+}
+.footer-infos{
+    display:flex;
+    flex-direction: column;
+    margin-right:80px;
+}
+.footer-infos-title{
+    color:white;
+    font-family:'Roboto';
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom:15px;
+}
+.footer-asii{
+    margin-bottom:10px;
+}
+.footer-infos-text{
+    color:white;
+    font-family:'Roboto';
+    font-size:16px;
+    margin-bottom:5px;
+    cursor: pointer;
+}
+.facebook{
+    align-self: flex-start;
+    cursor: pointer;
+}
+.footer-infos a {
+    text-decoration: none;
+}
