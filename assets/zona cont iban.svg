@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="688.945" height="131.242" viewBox="0 0 688.945 131.242">
+  <g id="zona_cont_iban" data-name="zona cont iban" transform="translate(6.36 -2132)">
+    <path id="Path_733" data-name="Path 733" d="M0,0H621.043l67.9,61.78-67.9,69.462H0Z" transform="translate(-6.36 2132)" fill="#da3636"/>
+    <text id="_908984398938493894893849849_ghfhhhf_hffjfjf_fhhfhfhf" data-name="908984398938493894893849849
+ghfhhhf hffjfjf fhhfhfhf" transform="translate(68 2213)" fill="#fff" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">908984398938493894893849849</tspan><tspan x="0" y="21">ghfhhhf hffjfjf fhhfhfhf</tspan></text>
+    <text id="Cont_iban" data-name="Cont iban" transform="translate(64 2173)" fill="#fff" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Cont iban</tspan></text>
+    <g id="Path_734" data-name="Path 734" transform="translate(-6.36 2137)" fill="none">
+      <path d="M0,0,619.383-.427,681.5,57.311l-62.119,63.752L0,121.749Z" stroke="none"/>
+      <path d="M 618.5977783203125 1.573554992675781 L 1.99993896484375 1.998634338378906 L 1.99993896484375 119.7467956542969 L 618.53857421875 119.0636749267578 L 678.640380859375 57.38186264038086 L 618.5977783203125 1.573554992675781 M 619.3831176757813 -0.4269866943359375 L 681.5018310546875 57.31101226806641 L 619.3831176757813 121.0627365112305 L -6.103515625e-05 121.7490081787109 L -6.103515625e-05 7.62939453125e-06 L 619.3831176757813 -0.4269866943359375 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>
