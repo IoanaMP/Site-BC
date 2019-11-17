@@ -482,6 +482,9 @@ body {
     max-width: 150px;
     width: 100%;
 }
+.partner a {
+    text-decoration: none;
+}
 .partner-name {
     font-size: 14px;
     font-family: 'Roboto';
@@ -736,6 +739,9 @@ body {
 @media(max-width:900px) {
     .header-pages a {
         font-size: 10px;
+    }
+    .header-flag{
+        width: 45%;
     }
     .first-page-title{
         font-size: 40px;
