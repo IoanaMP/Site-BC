@@ -2,15 +2,18 @@
 <html>
     <head>
         <title>Balul de caritate 2019</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
+    
     </head>
     <body>
         <div class="first-page">
             <img class="header-image" src="assets/header.svg"/>
+            <div class="header-image-mobile"></div>
             <div class="header">
                 <div class="header-flag">
                     <a href="https://asii.ro/" target="blank">
-                        <img src="assets/Asii.svg"/>
+                        <img class ="header-asii"style="max-width: 90px;" src="assets/Asii.svg"/>
                     </a>
                     <a href="https://www.info.uaic.ro/" target="blank">
                         <img src="assets/Fii.svg"/>
@@ -21,6 +24,28 @@
                     <a href="#about">Despre eveniment</a>
                     <a href="#beneficiaries">Beneficiar</a>
                     <a href="#last-page">Seara balului</a>
+                </div>
+            </div>
+            <div class='header-mobile'>
+                <div class="header-flag-mobile">
+                    <a class ="header-asii-mobile" href="https://asii.ro/" target="blank">
+                        <img style="max-width: 90px;" src="assets/Asii.svg"/>
+                    </a>
+                    <a href="https://www.info.uaic.ro/" target="blank">
+                        <img src="assets/Fii.svg"/>
+                    </a>
+                </div>
+                <div class="menu-mobile">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="header-pages-mobile">
+                        <a href="#" class="selected">Acasa</a>
+                        <a href="#about">Despre eveniment</a>
+                        <a href="#beneficiaries">Beneficiar</a>
+                        <a href="#last-page">Seara balului</a>
+                    </div>
                 </div>
             </div>
             <div class="first-page--content">
@@ -47,20 +72,22 @@
                         </div>
                         <div class="first-page-counter-middle">
                             <div class="first-page-counter-group">
-                                <div class="first-page-counter-group-box">1</div>
-                                <div class="first-page-counter-group-box">1</div>
+                                <div class="first-page-counter-group-box" id="days1"></div>
+                                <div class="first-page-counter-group-box" id="days2"></div>
                             </div>
                             <div class="first-page-counter-group">
-                                <div class="first-page-counter-group-box">1</div>
-                                <div class="first-page-counter-group-box">1</div>
+                                <div class="first-page-counter-group-box" id="hours1"></div>
+                                <div class="first-page-counter-group-box" id="hours2"></div>
                             </div>
                             <div class="first-page-counter-group">
-                                <div class="first-page-counter-group-box">1</div>
-                                <div class="first-page-counter-group-box">1</div>
+                                <div class="first-page-counter-group-box" id="minutes1"></div>
+                                <div class="first-page-counter-group-box" id="minutes2"></div>
                             </div>
                         </div>
                         <div class="first-page-counter-bottom">
-                            Ore pana la seara balului
+                            <div class="counter-days">Zile</div>
+                            <div class="counter-hours">Ore</div>
+                            <div class="counter-minutes">Minute</div>
                         </div>
                     </div>
                 </div>
@@ -79,7 +106,7 @@
                         <div class="about-description-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
                     </div>
                     <div class="about-description-right">
-                        <img src="assets/about-illustrations.svg"/>
+                        <img class="about-description-img"src="assets/about-illustrations.svg"/>
                     </div>
                 </div>
                 <div class="about-details">
@@ -126,8 +153,8 @@
         </div>
         <div class="last-page" id="last-page">
             <div class="coordinator">
-                <div>
-                    <img src="assets/coordinator.svg"/>
+                <div class="coordinator-top">
+                    <div class="coordinator-title">Coordonatorul evenimentului</div>
                 </div>
                 <div class="coordinator-details">
                     <div class="coordinator-name">Georgiana Aurora Butiuc</div>
@@ -175,10 +202,11 @@
                         <div class="footer-infos-text">ASII</div>
                     </a>
                 </div>
-                <a href="https://www.facebook.com/BaluldeCaritateASII2016/" target="blank">
+                <a class="facebook" href="https://www.facebook.com/BaluldeCaritateASII2016/" target="blank">
                     <img class="facebook" src="assets/facebook.svg"/>
                 </a>
             </div>
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>

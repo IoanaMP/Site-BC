@@ -4,18 +4,29 @@ body {
 .header-image{
     width:100%;
 }
+.header-image-mobile {
+    display:none;
+}
+.header-mobile{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
 .first-page {
     width:100%;
     top:0;
     right:0;
     left:0;
     height: 100vh;
+    display:flex;
+    flex-direction: column;
 }
 .header {
     width:100%;
-    height:50px;
+    height:70px;
     display:flex;
-    margin-top: 32px;
+    margin-top: 2%;
     justify-content: space-between;
     align-items:center;
 
@@ -31,13 +42,17 @@ body {
     align-items: center;
 
 }
+.header-flag-mobile {
+    display:none;
+}
 .header-flag img {
     padding-left:35px;
-
+    max-height: 150px;
+    height:100%;
 }
 .header-pages {
     display:flex;
-    width:75%;
+    width:100%;
     justify-content: flex-end;
     padding-right: 50px;
 }
@@ -63,11 +78,14 @@ body {
     font-weight: bold;
 }
 .first-page--content{
+    align-self: center;
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:100%;
-    margin-top: 20px;
+    /* margin-top: 5%; */
+    max-height:1000px;
+    height:100%;
 }
 .first-page--content-left{
     width:50%;
@@ -96,6 +114,9 @@ body {
     font-size:16px;
     color: #707070;
 }
+.header-asii-mobile {
+    display: none;
+}
 .first-page--content-right {
     width:50%;
     position: relative;
@@ -107,12 +128,13 @@ body {
 .first-page-image {
     height: 100%;
     width:100%;
-    max-width: 700px;
+    max-width: 1500px;
+    max-height:1800px;
 }
 .first-page-counter{
     position: absolute;
-    width:400px;
-    height:150px;
+    width:62%;
+    height:40%;
     background-color:rgba(255, 199, 199, 0.3);
     top:70%;
     left:35%;
@@ -138,6 +160,7 @@ body {
     color: #DA3636;
     text-transform: uppercase;
     align-items: center;
+    font-size: 16px;
 }
 .first-page-counter-middle {
     display: flex;
@@ -150,20 +173,44 @@ body {
 }
 .first-page-counter-group-box {
     margin-left:5px;
-    width:50%;
     border-radius: 5px;
-    height:100px;
+    height:100%;
     background-color: #FF000038;
     color:#CB0000B5;
     font-size: 70px;
     text-align: center;
     font-family: 'Roboto';
 }
+
 .first-page-counter-bottom {
+    
+    text-align: center;
+    display: flex;
+}
+.counter-days{
+    width: 23%;
     text-transform: uppercase;
+    align-self: flex-start;
     font-size:20px;
     font-family:'Roboto';
-    text-align: center;
+    color:#DA3636;
+    font-weight: bold;
+}
+.counter-hours{
+    width: 46%;
+    text-transform: uppercase;
+    align-self: flex-start;
+    font-size:20px;
+    font-family:'Roboto';
+    color:#DA3636;
+    font-weight: bold;
+}
+.counter-minutes{
+    width: 23%;
+    text-transform: uppercase;
+    align-self: flex-start;
+    font-size:20px;
+    font-family:'Roboto';
     color:#DA3636;
     font-weight: bold;
 }
@@ -194,21 +241,22 @@ body {
 }
 .about-description{
     width:55%;
-    height:370px;
+    max-height: 700px;
+    height:100%;
     background-color:#E7F1E6;
     display: flex;
     padding:0 64px;
 }
 .about-description-left{
     width:60%;
-    padding-top:64px;
+    padding-top:4%;
 }
 .about-description-title{
     font-family: 'Roboto';
     font-size: 24px;
     color:#498465;
     font-weight: bold;
-    margin-bottom:32px;
+    margin-bottom:5%;
 }
 .about-description-text{
     font-family: 'Roboto';
@@ -217,6 +265,12 @@ body {
 }
 .about-description-right{
     width:40%;
+}
+.about-description-img {
+    max-width: 400px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
 }
 .about-details{
     background-color: #2F8D5B;
@@ -229,7 +283,7 @@ body {
     position: relative;
 }
 .about-details-left{
-    margin-top:54px;
+    margin-top:11%;
     width:70%;
 }
 .about-details-text{
@@ -243,6 +297,12 @@ body {
     margin-top:-25%;
     top:15%;
     right:0;
+}
+.about-details-right img {
+    max-width: 400px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
 }
 .beneficiaries-page{
     width:100%;
@@ -299,9 +359,13 @@ body {
     width: 100%;
     background: url('./assets/iban-zone.svg');
     background-repeat: no-repeat;
-    height:150px;
-    padding-left: 64px;
-    padding-top:25px;
+    height:fit-content;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    background-size: contain;
+    background-position: left;
+    margin-bottom: 5%;
 }
 .ibanZone-title{
     font-size:24px;
@@ -332,15 +396,38 @@ body {
     align-items: center;
     margin-top: 15px;
 }
+.coordinator-top{
+    background:url('./assets/coordinator-header.svg');
+    background-repeat: no-repeat;
+    height:fit-content;
+    background-size: contain;
+    background-position: left;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    margin-bottom: 2%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.coordinator-title {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
 .coordinator-details{
     background:url('./assets/coordinator-details.svg');
     background-repeat: no-repeat;
     height:150px;
-    width:46%;
+    width:100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-size: contain;
+    background-position: center;
 }
 .coordinator-name{
     font-size:24px;
@@ -380,7 +467,7 @@ body {
     width:100%;
 }
 .footer-content{
-    margin-top:-50px;
+    margin-top:-4%;
     background-color: #248451;
     height: 180px;
     display:flex;
@@ -418,4 +505,609 @@ body {
 }
 .footer-infos a {
     text-decoration: none;
+}
+@media(min-width:1500px) {
+    .header {
+        max-height:100px;
+        height:100%;
+    }
+    .header-flag{
+        background-size: contain;
+        justify-content: flex-start;
+    
+    }
+    
+    .header-flag img{
+        width:100%;
+        max-width: 55px;
+        
+    }
+    .header-asii{
+        padding-right:100%;
+    }
+    .header-pages a {
+        font-size: 27px;
+    }
+    .first-page-title{
+        font-size:100px;
+    }
+    .first-page-subtitle {
+        font-size:100px;
+    }
+    .first-page-description {
+        font-size:28px;
+    }
+    .first-page-counter-text {
+        font-size: 24px;
+    }
+    .first-page-counter-days{
+        font-size: 27px;
+        margin-top: 4%;
+    }
+    .first-page-counter-hours{
+        font-size: 27px;
+        margin-top: 4%;
+    }
+    .first-page-counter-minutes{
+        font-size: 27px;
+        margin-top: 4%;
+    }
+    .about-top{
+        height:100%;
+        max-height: 100px;
+    }
+    .about-top-title{
+        font-size: 27px;
+    }
+    /* .about-details {
+        height:700px;
+    } */
+    .about-description{
+        height: 525px;
+    }
+    .about-description-title{
+        font-size:30px;
+    }
+    .about-description-text{
+        font-size: 27px;
+    }
+    .about-details {
+        height:310px;
+        margin-top:13%;
+    }
+    .about-details-text{
+        font-size:27px;
+    }
+    .beneficiaries-top{
+        background-size: cover;
+        height:100px;
+
+    }
+    .beneficiaries-top-title{
+        font-size: 27px;
+    }
+    .beneficiaries-content-paragraph-title{
+        font-size:30px;
+    }
+    .beneficiaries-content-paragraph-content{
+        font-size:27px;
+    }
+    .ibanZone-title{
+        font-size: 30px;
+    }
+    .ibanZone-iban {
+        font-size:27px;
+    }
+    .ibanZone-name {
+        font-size: 27px;
+    }
+    .beneficiaries-content-right{
+        margin-left:0%;
+    }
+    .coordinator-details{
+        background-size: cover;
+        height: 219px;
+    }
+    .coordinator-name{
+        font-size: 30px;
+    }
+    .coordinator-infos{
+        font-size: 27px;
+    }
+    .parteners-top{
+        height:100px;
+        font-size: 27px;
+    }
+
+}
+@media(max-width:1060px) {
+    .header-pages a {
+        font-size: 12px;
+    }
+    .first-page-title{
+        font-size: 50px;
+    }
+    .first-page-subtitle{
+        font-size:50px;
+    }
+    .first-page-description{
+        font-size: 12px;
+    }
+    .first-page-counter-text {
+        font-size:12px;
+    }
+    .first-page-counter-days{
+        font-size: 12px;
+    }
+    .first-page-counter-minutes{
+        font-size: 12px;
+    }
+    .first-page-counter-hours{
+        font-size: 12px;
+    }
+    .first-page-counter-group-box{
+        font-size: 50px;
+    }
+    .first-page-counter{
+        height: 37%;
+    }
+    .about-description-title{
+        font-size:20px;
+    }
+    .about-description-text{
+        font-size:12px;
+    }
+    .about-details{
+        height: 185px;
+    }
+    .about-details-text{
+        font-size: 12px;
+    }
+    .about-details-right img{
+        width: 73%;
+        height: 37%;
+        margin-left: 15%;
+    }
+    .beneficiaries-content-right img{
+        width:90%;
+        height:90%;
+        margin-left: 13%;
+    }
+    .beneficiaries-content-paragraph-title{
+        font-size: 20px;
+    }
+    .beneficiaries-content-paragraph-content{
+        font-size: 12px;
+    }
+    .ibanZone-title{
+        font-size: 20px;
+    }
+    .ibanZone-iban{
+        font-size: 12px;
+    }
+    .ibanZone-name{
+        font-size: 12px;
+    }
+    .coordinator-name{
+        font-size: 20px;
+    }
+    .coordinator-infos{
+        font-size: 12px;
+    }
+    .coordinator-details{
+        width: 58%;
+    }
+    .footer-infos-text{
+        font-size: 12px;
+    }
+    .footer-infos-title{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:900px) {
+    .header-pages a {
+        font-size: 10px;
+    }
+    .first-page-title{
+        font-size: 40px;
+    }
+    .first-page-subtitle{
+        font-size:40px;
+    }
+    .first-page-description{
+        font-size: 10px;
+    }
+    .first-page-counter-text {
+        font-size:10px;
+    }
+    .first-page-counter-days{
+        font-size: 10px;
+    }
+    .first-page-counter-minutes{
+        font-size: 10px;
+    }
+    .first-page-counter-hours{
+        font-size: 10px;
+    }
+    .first-page-counter-group-box{
+        font-size: 27px;
+    }
+    .first-page-counter{
+        height: 37%;
+    }
+    .about-description-title{
+        font-size:18px;
+    }
+    .about-description-text{
+        font-size:10px;
+    }
+    .about-details{
+        height: 155px;
+    }
+    .about-details-text{
+        font-size: 10px;
+    }
+    .about-details-right img{
+        width: 64%;
+        height: 37%;
+        margin-left: 27%;
+    }
+    .beneficiaries-content-right img{
+        width:90%;
+        height:90%;
+        margin-left: 13%;
+    }
+    .beneficiaries-content-paragraph-title{
+        font-size: 18px;
+    }
+    .beneficiaries-content-paragraph-content{
+        font-size: 10px;
+    }
+    .ibanZone-title{
+        font-size: 18px;
+    }
+    .ibanZone-iban{
+        font-size: 10px;
+    }
+    .ibanZone-name{
+        font-size: 10px;
+    }
+    .coordinator-name{
+        font-size: 18px;
+    }
+    .coordinator-infos{
+        font-size: 10px;
+    }
+    .coordinator-details{
+        width: 63%;
+    }
+    .footer-infos-text{
+        font-size: 10px;
+    }
+    .footer-infos-title{
+        font-size: 14px;
+    }
+}
+@media(max-width:600px) {
+    .header-image{
+        display:none;
+    }
+    .header-image-mobile {
+        background-image:url('./assets/header.svg');
+        width: 100%;
+        background-size: cover;
+        height:30px;
+        display: inherit;
+    }
+    .header{
+        display: none;
+    }
+    .header-mobile {
+        display:flex;
+        height:50px;
+        margin-bottom: 2px;
+        
+    }
+    .header-flag-mobile {
+        background-image:url('./assets/header-flag.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        height:50px;
+        width:50%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .header-asii-mobile {
+        display: inherit;
+        margin-bottom: 3%;
+        margin-left: 10%;
+        margin-right: 15%;
+    }
+    .header-pages {
+        display:none;
+    }
+    .menu-mobile{
+        display: block;
+        align-self: center;
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    .menu-mobile input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        cursor: pointer;
+        opacity: 0; /* hide this */
+        z-index: 11; /* and place it over the hamburger */
+    }
+    .menu-mobile span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #248451;
+        border-radius: 3px;
+        
+        z-index: 11;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    .menu-mobile span:first-child
+    {
+        transform-origin: 0% 0%;
+        z-index: 11;
+    }
+
+    .menu-mobile span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+        z-index: 11;
+    }
+    .menu-mobile input:checked ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #248451;
+        z-index: 11;
+    }
+    .menu-mobile input:checked ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+        z-index: 11;
+    }
+    .menu-mobile input:checked ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+        z-index: 11;
+    }
+    .header-pages-mobile{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        padding: 50px;
+        padding-top: 125px;
+        background: white;
+        -webkit-font-smoothing: antialiased;
+        
+        transform: translate(100%, 0);
+        z-index: 10;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    .header-pages-mobile a {
+        padding: 10px 0;
+        font-family: 'Roboto';
+        letter-spacing: 0;
+        color: #707070;
+        padding-left:40px;
+        cursor: pointer;
+        font-size:16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .header-pages-mobile .selected {
+        color:#248451;
+        font-family:'Roboto';
+        font-weight: bold;
+    }
+    .menu-mobile input:checked ~ .header-pages-mobile
+    {
+        transform: none;
+        display:flex;
+
+    }
+    .first-page {
+        width: fit-content;
+        height: fit-content;
+    }
+    .first-page--content{
+        height: fit-content;
+        width: 90%;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: unset;
+        z-index: 0;
+        padding: 0 16px;
+    }
+
+    .first-page--content-left{
+        width:100%;
+        margin-left: 0;
+    }
+    .first-page--content-right{
+        width:100%;
+    }
+    .first-page-description{
+        width: 100%;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .first-page--content-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-page-counter{
+        position: initial;
+        width: 95%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .first-page-counter-group-box {
+        font-size: 50px;
+    }
+    .about-event{
+        /* display:none; */
+        width: fit-content;
+        height: fit-content;
+    }
+    .about-content {
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+        padding: 0 16px;
+    }
+    .about-description{
+        width: 100%;
+        margin-top: 5%;
+        padding: 0;
+        flex-direction: column;
+        height: 50%;
+    }
+    .about-description-left{
+        width: 100%;
+    }
+    .about-description-title{
+        margin-left: 15px;
+    }
+    .about-description-text{
+        margin-left: 10px;
+        margin-right: 13px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .about-description-right {
+        width: 100%;
+    }
+    .about-description-img{
+        width: 100%;
+        max-height: 200px;
+    }
+    .about-details{
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .about-details-text{
+        font-size: 16px;
+    }
+    .about-details-right{
+        position: initial;
+        margin-top: 0;
+    }
+    .about-details-right img {
+        margin-top: 0%;
+        width: 67%;
+        height: 180px;
+    }
+    .about-details-left{
+        padding-bottom:11%;
+        width: 90%;
+        padding-left: 10px;
+    }
+    .beneficiaries-page {
+        height: fit-content;
+    }
+    .beneficiaries-content {
+        flex-direction: column;
+        width: 90%;
+    }
+    .beneficiaries-content-left {
+        width: 100%;
+    }
+    .beneficiaries-content-paragraph{
+        margin-left: 0;
+        padding: 0 16px;
+
+    }
+    .beneficiaries-content-paragraph-title{
+        font-size: 20px;
+    }
+    .beneficiaries-content-paragraph-content {
+        font-size: 16px;
+    }
+    .ibanZone-title{
+        font-size: 20px;
+    }
+    .ibanZone-iban{
+        font-size: 16px;
+    }
+    .ibanZone-name{
+        font-size: 16px;
+    }
+    .beneficiaries-content-right {
+        width: 100%;
+    }
+    .last-page {
+        /* display:none; */
+    }
+    .coordinator-title {
+        font-size: 14px;
+    }
+    .coordinator-details{
+        width: 100%;
+    }
+    .coordinator-name{
+        font-size: 20px;
+    }
+    .coordinator-infos{
+        font-size: 16px;
+    }
+    .footer{
+        /* display:none; */
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: fit-content;
+    }
+    .footer-infos{
+        margin-top: 3%;
+        margin-right: 0;
+        width: 150px;
+        margin-bottom: 5%;
+    }
+    .footer-infos-title{
+        font-size: 20px;
+    }
+    .footer-infos-text{
+        font-size: 16px;
+    }
+    .facebook{
+        margin-bottom: 5%;
+        align-self: center;
+    }
 }
