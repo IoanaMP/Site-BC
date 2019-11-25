@@ -980,6 +980,13 @@ body {
     .first-page {
         width: fit-content;
         height: fit-content;
+        height: auto;
+    }
+    .partner {
+        margin: 0;
+        padding: 15px;
+        width: 50%;
+        box-sizing: border-box;
     }
     .first-page--content{
         height: fit-content;
@@ -1022,6 +1029,7 @@ body {
         /* display:none; */
         width: fit-content;
         height: fit-content;
+        height: auto;
     }
     .about-content {
         flex-direction: column;
@@ -1059,9 +1067,10 @@ body {
         padding: 0;
         margin-left: 0;
         width: 100%;
-        height: fit-content;
+        height: auto;
         display: flex;
         margin-bottom: 10px;
+        flex-direction: column;
     }
     .about-details-text{
         font-size: 16px;
@@ -1071,14 +1080,14 @@ body {
         margin-top: 0;
     }
     .about-details-right img {
-        margin-top: 0%;
+        margin-top: -75px;
         width: 67%;
         height: 180px;
     }
     .about-details-left{
-        padding-bottom:11%;
         width: 90%;
-        padding-left: 10px;
+        padding: 20px;
+        margin: 0;
     }
     .beneficiaries-page {
         height: fit-content;
@@ -1143,7 +1152,7 @@ body {
         font-size: 16px;
     }
     .footer{
-        /* display:none; */
+        height: auto;
     }
     .footer-content{
         display: flex;
@@ -1151,13 +1160,16 @@ body {
         justify-content: center;
         align-items: center;
         padding: 0;
-        height: fit-content;
+        height: auto;
     }
     .footer-infos{
         margin-top: 3%;
         margin-right: 0;
-        width: 150px;
+        width: 80%;
         margin-bottom: 5%;
+    }
+    .footer-asii {
+        margin: 25px auto 25px auto;
     }
     .footer-infos-title{
         font-size: 20px;
