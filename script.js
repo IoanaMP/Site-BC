@@ -32,3 +32,20 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+const openMenu = document.getElementById("open-menu"),
+      closeMenu = document.getElementById("close-button"),
+      menu = document.getElementsByClassName("menu-mobile")[0],
+      navContainer = document.getElementById("mobile-nav-container");
+
+openMenu.addEventListener("click", (e) => {
+  menu.classList.add("opened");
+});
+
+closeMenu.addEventListener("click", (e) => {
+  menu.classList.remove("opened");
+});
+
+navContainer.addEventListener("click", (e) => {
+  menu.classList.remove("opened");
+});
