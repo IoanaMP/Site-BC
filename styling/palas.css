@@ -3,30 +3,26 @@ body{
 }
 .palas-page{
     width:100%;
-    height: 100vh;
+    height: auto;
+    background-color:#DA3636;
+    margin: 50px auto;
+}
+#background {
+    max-height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 3;
 }
 .palas-content-rectangle
 {
-    align-self: center;
     display:flex;
     width:100%;
-    height: 55%;
     margin:0;
     padding: 0;
-    background-color:#DA3636;
-    position:absolute;
-    z-index: -1;
-}
-.palas-ilustrations
-{
-    align-self: center;
-    display:flex;
-    width:100%;
-    height: 500px;
-    margin:-40px;
-    padding: 0;
-    position:absolute;
-    
+    position:relative;
+    height: 450px;
+    background-size: cover;
+    background-position-x: center;;
 }
 .palas-content-rectangle-ilustations
 {
@@ -39,10 +35,15 @@ body{
 }
 .palas-rectangle-left
 {
-    width:50%;
-    z-index: 1;
-    margin-left:100px;
-    margin-top:42px;
+    width:60%;
+    z-index: 4;
+    padding: 15px;
+}
+#left-content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
 }
 .rectangle-left-text
 {
@@ -65,7 +66,7 @@ body{
 }
 .palas-rectangle-right
 {
-    width:50%;
+    width:40%;
     position: relative;
     z-index: 1;
     margin-top:62px;
@@ -77,14 +78,6 @@ body{
     width:100%;
     height:100%;
 }
-.palas-page-counter{
-    /* position: absolute; */
-    width:62%;
-    height:50%;
-    background-color:rgba(255, 199, 199, 1);
-    left:35%;
-    padding:8px;
-}
 .palas-page--content-right {
     width:50%;
     position: relative;
@@ -92,10 +85,11 @@ body{
 .palas-page-counter{
     position: absolute;
     width:60%;
-    height:40%;
+    height:150px;
     background-color:rgba(255, 199, 199, 1);
     top:25%;
     left:15%;
+    border-radius: 3px;
     /* bottom:0; */
     padding:8px;
 }
@@ -176,4 +170,29 @@ body{
     font-family:'Roboto';
     color:#DA3636;
     font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+
+    .palas-content-rectangle {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .palas-content-rectangle > div {
+        width: 100%;
+    }
+
+    .palas-page-counter {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        z-index: 4;
+        width: 90%;
+    }
+
 }
