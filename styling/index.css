@@ -433,7 +433,7 @@ body {
     background: url('../assets/iban-zone.svg');
     background-repeat: no-repeat;
     height: fit-content;
-    padding-left: 10%;
+    padding-left: 20px;
     padding-top: 3%;
     padding-bottom: 5%;
     background-size: contain;
@@ -548,6 +548,7 @@ body {
 .partners-listing {
     margin-left: 62px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 95%;
     margin-top: 5%;
