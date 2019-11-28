@@ -7,12 +7,6 @@ body{
     background-color:#DA3636;
     margin: 50px auto;
 }
-#background {
-    max-height: 100%;
-    width: auto;
-    position: absolute;
-    z-index: 3;
-}
 .palas-content-rectangle
 {
     display:-webkit-box;
@@ -25,7 +19,8 @@ body{
     position:relative;
     height: 450px;
     background-size: cover;
-    background-position-x: center;;
+    background-position-x: center;
+    background-image: url("../assets/ilustratii.svg");
 }
 .palas-content-rectangle-ilustations
 {
@@ -208,6 +203,7 @@ body{
             -ms-flex-direction: column;
                 flex-direction: column;
         height: auto;
+        background-position-x: left;
     }
 
     .palas-content-rectangle > div {

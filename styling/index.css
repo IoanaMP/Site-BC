@@ -71,8 +71,9 @@ body {
 
 .header-flag a {
     display: block;
-    padding: 7px;
     margin-left: 10px;
+    height: 70%;
+    margin-bottom: 7px;
 }
 
 .header-flag img {
