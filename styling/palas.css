@@ -15,8 +15,11 @@ body{
 }
 .palas-content-rectangle
 {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     width:100%;
+    overflow: hidden;
     margin:0;
     padding: 0;
     position:relative;
@@ -26,6 +29,8 @@ body{
 }
 .palas-content-rectangle-ilustations
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
     position:relative;
@@ -94,8 +99,12 @@ body{
     padding:8px;
 }
 .palas-page-counter-top {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     font-family:'Roboto';
     font-weight: bold;
 }
@@ -106,17 +115,27 @@ body{
 }
 .palas-page-counter-text {
     padding:0 3px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width:33%;
     color: #DA3636;
     text-transform: uppercase;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 16px;
 }
 .palas-page-counter-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 5px;
     /* height: 60%;
     width: 100%; */
@@ -124,6 +143,8 @@ body{
 .palas-page-counter-group {
     width:30%;
     /* height: 85%; */
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 .palas-page-counter-group-box {
@@ -141,13 +162,18 @@ body{
 .palas-page-counter-bottom {
     
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .counter-days{
     width: 24%;
     text-transform: uppercase;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size:20px;
     font-family:'Roboto';
     color:#DA3636;
@@ -156,7 +182,8 @@ body{
 .counter-hours{
     width: 35%;
     text-transform: uppercase;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size:20px;
     font-family:'Roboto';
     color:#DA3636;
@@ -165,7 +192,8 @@ body{
 .counter-minutes{
     width: 35%;
     text-transform: uppercase;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size:20px;
     font-family:'Roboto';
     color:#DA3636;
@@ -175,7 +203,10 @@ body{
 @media screen and (max-width:750px) {
 
     .palas-content-rectangle {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: auto;
     }
 
